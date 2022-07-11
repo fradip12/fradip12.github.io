@@ -1,508 +1,959 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-    <style>
-    .avatar {
-        vertical-align: middle;
-        width: 175px;
-        height: 175px;
-        margin-left: 50px;
-        border-radius: 50%;
-        }
-    </style>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/profile.png"/>
+    <title>Deep's</title>
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Deep</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact Me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Fradipta Alqaiyum</h1>
-            <h2>Student at ITS | Jr. Mobile App Developer</h2>
-            <a href="https://drive.google.com/file/d/1KzbEDxC0M7bR42t2fDnPnrpfaMwrNcJl/view?usp=sharing" class="btn-rounded-white">Download CV</a>
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="column">                        
-                    <img width="175" height="175" 
-                        class="avatar"
-                        src="https://avatars3.githubusercontent.com/u/65805640?s=460&u=bc0d9b5c006e297bdb5aa928d6acb46d732ddab1&v=4"
-                        alt="Avatar"
-                    />
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/dipoo/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://wa.me/+6281268786843" target="_blank" class="home__social-icon">
+                            <i class="uil uil-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/fradip12" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
                     </div>
-                    
-                </div>
-                <div class="col-md-8">
-                    <h2 class="heading">About Me</h2>
-                    <p>
-                        Hello, Welcome to my portfolio website. 
-                        Im Fradipta Alqaiyum, Last Year student at 
-                        Sepuluh Nopember Institute of Technology. 
-                        My majority is Computer Enggineering. also, 
-                        im laboratory assistant of Computing Multimedia 
-                        in Intelligent Informatics and Electrics Faculty.
-                         Im trying to make Mobile Applications, 
-                         Internet of Things System, and others   
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="2017 – Now">
-                <h3>Student</h3>
-                <h4>Sepuluh Nopember Institut of Technology</h4>
-                <p>
-                    Last year Student at Computer Engineering ,Sepuluh Nopember Institut of Technology
-                </p>
-            </div>
-            <div data-date="2018 – Now">
-                <h3>Laboratory Assistant</h3>
-                <h4>Computer Engineering Sepuluh Nopember Institut of Technology</h4>
-                <p>
-                    Laboratory Assistant at Multimedia Computing in Computer Engineering ITS
-                </p>
-            </div>
-
-            <div data-date="2020 – Now">
-                <h3>Mobile Developer Freelancer</h3>
-                <h4>projects.co.id</h4>
-                <p>
-                    Freelancer at projects.co.id in Mobile Application Development
-                </p>
-            </div>
-
-            <div data-date="2020 ">
-                <h3>Mobile Front End Developer</h3>
-                <h4>PT. Berbagi Solusi Teknologi</h4>
-                <p>
-                    Make application for startup Berbagi with Hybrid Framework ( Flutter )
-                </p>
-            </div>
-            
-            <div data-date="Januari 2021 – Now">
-                <h3>Hybrid Mobile Developer</h3>
-                <h4>Revo Group ( Software House )</h4>
-                <p>
-                    Flutter Mobile Developer at software house at Surabaya.
-                </p>
-            </div>
-         
-
-            
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Sertification, Training & Workshop</h2>
-        <div class="education-block">
-            <h3>Fundamental of Deep learning for Computer Vision</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>NVIDIA</h4>     
-            <img 
-            width="100"
-            src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2016/12/08/526693-nvidia-logo.jpg" >   
-            <a href="">See Credential</a> 
-        </div>
-        <div class="education-block">
-            <h3>Machine Learning for Beginner</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>Dicoding Academy</h4>     
-            <img 
-            width="100"
-            src="https://www.dicoding.com/blog/wp-content/uploads/2017/10/dicoding-logo-square-1.png" >  
-            <a href="">See Credential</a>   
-        </div>
-        <div class="education-block">
-            <h3>Dasar Visualisasi</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>Dicoding Academy</h4>     
-            <img 
-            width="100"
-            src="https://www.dicoding.com/blog/wp-content/uploads/2017/10/dicoding-logo-square-1.png" >  
-            <a href="">See Credential</a>   
-        </div>
-        <div class="education-block">
-            <h3>Android Developer Beginner</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>Dicoding Academy</h4>     
-            <img 
-            width="100"
-            src="https://www.dicoding.com/blog/wp-content/uploads/2017/10/dicoding-logo-square-1.png" >  
-            <a href="">See Credential</a>   
-        </div>
-        <div class="education-block">
-            <h3>Kotlin Programming</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>Dicoding Academy</h4>     
-            <img 
-            width="100"
-            src="https://www.dicoding.com/blog/wp-content/uploads/2017/10/dicoding-logo-square-1.png" >  
-            <a href="">See Credential</a>   
-        </div>
-        <div class="education-block">
-            <h3>Basic Dart Programming</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>Dicoding Academy</h4>     
-            <img 
-            width="100"
-            src="https://www.dicoding.com/blog/wp-content/uploads/2017/10/dicoding-logo-square-1.png" >  
-            <a href="">See Credential</a>   
-        </div>
-        <div class="education-block">
-            <h3>Python Programming</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>Dicoding Academy</h4>     
-            <img 
-            width="100"
-            src="https://www.dicoding.com/blog/wp-content/uploads/2017/10/dicoding-logo-square-1.png" >  
-            <a href="">See Credential</a>   
-        </div>
-        <div class="education-block">
-            <h3>Flutter Hackathon 2020</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>GDC</h4>    
-           
-            <a href="">See Credential</a>   
-        </div>
-        <div class="education-block">
-            <h3>Webinar Electics Visual Perception for self driving cars</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>Computer Engineering ITS</h4>     
-            <img 
-            width="100"
-            src="https://www.dicoding.com/blog/wp-content/uploads/2017/10/dicoding-logo-square-1.png" >  
-            <a href="">See Credential</a>   
-        </div>
-        <div class="education-block">
-            <h3>Webinar Electics Visual Perception for self driving cars</h3>
-            <!-- <span class="education-date">Sept 2016 - Sept 2017</span> -->
-            <h4>International Conference of Computer engineering Network and Intelligent Multimedia 2020</h4>     
-            <a href="">See Credential</a>   
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/berbagi.png" width="200" />
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" x="16" y="18" href="assets/img/profile.png" />
+                            </g>
+                        </svg>
                     </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Bagus.id</h3>
-                        <p>
-                            Bagus.id is a social funding platform. 
-                            Bagus can help you to raise social awareness. 
-                            By utilizing technology, this platform will provide benefits 
-                            to social assistance recipients such as orphans, the poor, 
-                            and other social institutions. 
-                            This Platform is belongings to PT. Berbagi Solusi Teknologi    </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/cupangid.png" width="200" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Cupangid Bettafish</h3>
-                        <p>
-                            Available on Playstore. This is a marketplace for Bettafish Community. You can buy Fish, Fish Foods, or others
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Hi, I'm Fradip
+                        </h1>
+                        <h3 class="home__subtitle">
+                            Mobile developer
+                        </h3>
+                        <p class="home__description">
+                            Experience in Mobile Development for iOS and Android.
+                            Skilled, motivated and product-oriented mobile
+                            application developer with strong Object Oriented Programming
+                            Concepts and design skills Experience in developing android and iOS
+                            Apps.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                
-                <!-- PROJECT -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/efisien.png"width="200"  />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Efisiensi</h3>
-                        <p>
-                            Efisiensi Bus is centered in Central Java. Efisiensi App serves as a ticket service provider and information about trips using efficiency buses  </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
 
-                 <!-- PROJECT -->
-                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/dafeed.png"width="200"  />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Dafeed Ransum</h3>
-                        <p>
-                            This apps is belongings to Politeknik Negri Lampung. 
-                            My friends Moms offers me to build apps to calculating 
-                            Dairy Feed Formulation for Livestock<a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
 
-                 <!-- PROJECT -->
-                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/water.png"width="200"  />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Water Reminder</h3>
-                        <p>
-                            This is My first Apps with Flutter. 
-                             I created Apps that can help human to drink water regularly. </div>
-                    <!-- End .project-info -->
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
                 </div>
-                <!-- End .project -->
 
-                 <!-- PROJECT -->
-                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/vastogo.png"width="200"  />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Vastogo e-waste</h3>
-                        <p>
-                            Last October, I and my friends wanted to enter the competition, 
-                            GEMASTIK. So with Our Ideas, I created this apps. This Apps is 
-                            used for electronic waste shelter and can make money </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <!-- PROJECT -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/e-car.png"width="150"  />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>e-Car RC Apps</h3>
-                        <p>
-                            This Apps is belongings to oen of my courses at College. 
-                            This apps is used for controlling electronic car robot. 
-                            This apps is controlling system for autonomous or manual of 
-                            RC e-Car. </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <!-- PROJECT -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/travel.png"width="150"  />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Travel Ticket</h3>
-                        <p>
-                            This is my exercize project. 
-                            I created apps that used for book a ticket of Travelling agency. 
-                            Like Sea, Mountain, or whatever. But this is just Excersize</div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <!-- PROJECT -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/jogja.png"width="150"  />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Jogja Trans</h3>
-                        <p>
-                            In 2019, I decided to enter the competition at University of
-                            Gajah Mada, Yogyakarta. So I created apps that can monitoring 
-                            system, and booking system for Jogja Trans.</div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <!-- PROJECT -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/aquaponic.png"width="150"  />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Aquaponic</h3>
-                        <p>
-                            This apps is used for monitoring of aquaponic system. 
-                            Someone ask me to make application that can help them to
-                            monitor aquaponic system. In this apps i just contribute so little</div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <!-- PROJECT -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/sea2.jpg"width="150"  />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>I Sea</h3>
-                        <p>
-                            This is no Apps. This is just UI/UX Design.
-                            I make this design for my Junior. She want to join competition, 
-                            and she wants my helps to make UI/UX for her Ideas</div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
             </div>
-        </div>
-    </div>
-    <!-- End #projects -->
+        </section>
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            
-            <li>Python</li>           
-            <li>C</li>            
-            <li>C++</li>          
-            <li>Python</li>
-            <li>Dart</li>           
-            <li>Flutter</li>            
-            <li>Google Collab</li>          
-            <li>Kotlin</li>
-            <li>Adobe XD</li>           
-            <li>Kaggle</li>            
-            <li>Arduino</li>          
-            <li>Embedded System</li>
-            <li>Internet of Things</li>      
-           
-        </ul>
-    </div>
-    <!-- End #skills -->
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">
+                About Me
+            </h2>
+            <span class="section__subtitle">My introduction</span>
 
-    <!-- <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div> -->
-        <!-- End #contact-form -->
-    <!-- </div> -->
-    <!-- End #contact -->
+            <div class="about__container container grid">
+                <img src="assets/img/dip.jpg" alt="about-img" class="about__img">
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2021 Fradip
+                <div class="about__data">
+                    <p class="about__description">
+                        Mobile Application Developer with around 2 years experience in
+                        software development lifecycle (SDLC) including analysis, design,
+                        development, and testing, deployment and documentation
                     </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/fradip12" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>                       
-                        <li>
-                            <a href="https://linkedin.com/dipoo" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>                      
-                       
-                        <li>
-                            <a href="mailto:fradipta.alqaiyum@gmail.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">2+</span>
+                            <span class="about__info-name">Years <br> experience</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">20+</span>
+                            <span class="about__info-name">Completed <br> projects</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">4+</span>
+                            <span class="about__info-name">Companies <br> worked</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/fradip.pdf" class="button button--flex">
+                            Download CV<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills__container container grid">
+                <div>
+
+                    <!--==================== SKILLS 1 ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Mobile developer</h1>
+                                <span class="skills__subtitle">More than 2 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Flutter</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__flutter"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Swift UI</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__swiftUI"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Kotlin</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__kotlin"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__git"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__firebase"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Google Cloud</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__gcp"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-server-network skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Backend developer</h1>
+                                <span class="skills__subtitle">More than 2 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node JS</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__firebase"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">55%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+                <div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-swatchbook skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">UI/UX</h1>
+                                <span class="skills__subtitle">1 Years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__figma"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Corel Draw</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__photoshop"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex " data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex " data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Computer Enginnering</h3>
+                                <span class="qualification__subtitle">Sepuluh Nopember Institue of Technology</span>
+                                <span class="qualification__subtitle">Indonesia</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <!-- <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Web Design</h3>
+                                <span class="qualification__subtitle">Spain - Institute</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014 - 2017
+                                </div>
+                            </div>
+
+                        </div> -->
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <!-- <div class="qualification__data">
+
+                            <div>
+                                <h3 class="qualification__title">Web Development</h3>
+                                <span class="qualification__subtitle">Peru - Institute</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                        </div> -->
+
+                        <!--==================== QUALIFICATION 4 ====================-->
+                        <div class="qualification__data">
+
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Senior High School</h3>
+                                <span class="qualification__subtitle">Indonesia</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014-2017
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                    <div class="qualification__content" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Mobile Developer</h3>
+                                <span class="qualification__subtitle">Asset Data Solutions Bh.D - Malaysia</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022-Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Mobile Developer</h3>
+                                <span class="qualification__subtitle">PT. Minasa Finteknologi Syariah - Indonesia</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021-2022
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+
+                            <div>
+                                <h3 class="qualification__title">Mobile Developer</h3>
+                                <span class="qualification__subtitle">Revo Apps - Indonesia</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021-2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 4 ====================-->
+                        <div class="qualification__data">
+
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Mobile Developer</h3>
+                                <span class="qualification__subtitle">PT. Berbagi Solusi Teknologi</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020-2020
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+
+                            <div>
+                                <h3 class="qualification__title">Freelancer Mobile Developer</h3>
+                                <span class="qualification__subtitle">Ideon Lab - Self Employed</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019-Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <!-- <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What I offer</span>
+
+            <div class="services__container container grid">
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">UI/UX <br> Designer</h3>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">UI/UX <br> Designer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                 <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Fronted <br> Developer</h3>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Fronted <br> Developer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-pen services__icon"></i>
+                        <h3 class="services__title">Branding <br> Designer</h3>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Branding <br> Designer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section> -->
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/ddsdigital.JPG" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">DDS Digital</h3>
+                            <p class="portfolio__description">Apps
+                                is used for internal cooperative society. Social Funding. And more
+                                payment feature for e-wallet or bank transfer. Apps already deployed
+                                at Playstore and Appstore.</p>
+                            <a href="https://play.google.com/store/apps/details?id=id.minasa.satudaya" target="_blank"
+                                class="home__social-icon">
+                                <i class="uil uil-google-play"></i>
+                            </a>
+                            <a href="https://apps.apple.com/id/app/dds-digital/id1568928400?l=id" target="_blank"
+                                class="home__social-icon">
+                                <i class="uil uil-apple-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/assetdata.JPG" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">AssetData.io</h3>
+                            <p class="portfolio__description">Create Mobile Apps for asset management system for several
+                                client
+                                such as Petronas, Sepura, and Air Asia under AssetData.io Platform.
+                                Apps already deployed at Playstore and Appstore.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.assetdata.app" target="_blank"
+                                class="home__social-icon">
+                                <i class="uil uil-google-play"></i>
+                            </a>
+                            <a href="https://apps.apple.com/my/app/assetdata/id1615726868" target="_blank"
+                                class="home__social-icon">
+                                <i class="uil uil-apple-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/indohobi.JPG" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Indohobi.id</h3>
+                            <p class="portfolio__description">Create Mobile App for hobbies marketplace ( Indohobi,id )
+                                at Revo
+                                Apps Software house. Apps Already live and deployed to playstore and
+                                appstore.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.indohobi.id" target="_blank"
+                                class="home__social-icon">
+                                <i class="uil uil-google-play"></i>
+                            </a>
+                            <!-- <a href="https://github.com/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-apple-alt"></i>
+                            </a> -->
+                        </div>
+                    </div>
+
+
+
+                    <!--==================== PORTFOLIO 5 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/berbagi.JPG" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Berbagi Apps</h3>
+                            <p class="portfolio__description">Create Mobile App Front end for Social Funding Startup
+                                with Flutter and
+                                Firebase.</p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </section>
+        <section class="more__portfolio__sections" >
+            
+            <div class="about__buttons">
+                <a download="" href="assets/pdf/fradip_port.pdf" class="button button--flex">
+                    More Portfolio<i class="uil uil-download-alt button__icon"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have a new project</h2>
+                        <p class="project__description">
+                            Contact me now !
+                        </p>
+
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/project.png" alt="project-img" class="project__img">
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+62 812 6878 6843</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">fradipta.alqaiyum@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Jakarta -Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="POST" class="contact__form grid">
+                    <!-- <div class="contact__imputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Project</label>
+                        <input type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <input type="email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div> -->
+
+                    <div>
+                        <a href="mailto:fradipta.alqaiyum@gmail.com" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Fradip</h1>
+                    <span class="footer__subtitle">Mobile developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://facebook.com" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Source : BedimCode</p>
+        </div>
+
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
